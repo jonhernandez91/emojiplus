@@ -1,9 +1,14 @@
 import React from "react";
 
 function EmojiSpan(props) {
+  const {
+    role = 'img',
+    ariaLabel = 'sunglasses emoji',
+    children = '😎'
+  } = props
   return (
-    <span role={props.role} aria-label={props.ariaLabel}>
-      {props.children}
+    <span role={role} aria-label={ariaLabel}>
+      {children}
     </span>
   );
 }

@@ -7,7 +7,8 @@
     "test": "npm run test:babel",
     "test:babel": "npx babel src --out-dir .babel-config-test/",
     "build": "npm run build:rollup",
-    "build:rollup": "npx rollup --config"
+    "build:rollup": "npx rollup --config",
+    "release": "npm i && git ci -am \"$TAG\" && git tag $TAG && git push origin $TAG && git push && echo \"https://github.com/jonhernandez91/emojiplus/new?tag=$TAG&title=$TAG 🚀\""
   },
   "repository": {
     "type": "git",
