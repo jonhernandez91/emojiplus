@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/jonhernandez91/emojiplus/issues"
   },
-  "homepage": "https://github.com/jonhernandez91/emojiplus#readme"
+  "homepage": "https://github.com/jonhernandez91/emojiplus#readme",
+  "devDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
