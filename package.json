@@ -1,0 +1,24 @@
+{
+  "name": "emojiplus",
+  "version": "0.0.0",
+  "description": "tbd",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonhernandez91/emojiplus.git"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "package"
+  ],
+  "author": "Jonathan Hernandez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonhernandez91/emojiplus/issues"
+  },
+  "homepage": "https://github.com/jonhernandez91/emojiplus#readme"
+}
