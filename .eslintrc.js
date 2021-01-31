@@ -3,7 +3,9 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'prettier'],
-  plugins: ['react'],
-  rules: {},
+  extends: ["plugin:react/recommended", "airbnb", "prettier"],
+  plugins: ["react"],
+  rules: {
+    "react/prop-types": "off",
+  },
 };
