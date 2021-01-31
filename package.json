@@ -1,6 +1,6 @@
 {
   "name": "emojiplus",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "tbd",
   "main": "bundle.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test:babel": "npx babel src --out-dir .babel-config-test/",
     "build": "npm run build:rollup",
     "build:rollup": "npx rollup --config",
-    "release": "npm i && git ci -am \"$TAG\" && git tag $TAG && git push origin $TAG && git push && echo \"https://github.com/jonhernandez91/emojiplus/new?tag=$TAG&title=$TAG 🚀\"",
+    "release": "npm i && git ci -am \"$TAG\" && git tag $TAG && git push origin $TAG && git push && echo \"https://github.com/jonhernandez91/emojiplus/releases/new?tag=$TAG&title=$TAG 🚀\"",
     "clean": "npm run clean:eslint && npm run clean:prettier",
     "clean:eslint": "npx eslint --fix .",
     "clean:prettier": "npx prettier --write .",
