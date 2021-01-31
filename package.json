@@ -4,11 +4,16 @@
   "description": "tbd",
   "main": "bundle.js",
   "scripts": {
-    "test": "npm run test:babel",
+    "test": "npm run test:eslint && npm run test:prettier",
     "test:babel": "npx babel src --out-dir .babel-config-test/",
     "build": "npm run build:rollup",
     "build:rollup": "npx rollup --config",
-    "release": "npm i && git ci -am \"$TAG\" && git tag $TAG && git push origin $TAG && git push && echo \"https://github.com/jonhernandez91/emojiplus/new?tag=$TAG&title=$TAG 🚀\""
+    "release": "npm i && git ci -am \"$TAG\" && git tag $TAG && git push origin $TAG && git push && echo \"https://github.com/jonhernandez91/emojiplus/new?tag=$TAG&title=$TAG 🚀\"",
+    "clean": "npm run clean:eslint && npm run clean:prettier",
+    "clean:eslint": "npx eslint --fix .",
+    "clean:prettier": "npx prettier --write .",
+    "test:eslint": "npx eslint .",
+    "test:prettier": "npx prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -35,10 +40,12 @@
     "@rollup/plugin-node-resolve": "^11.1.1",
     "eslint": "^7.18.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rollup": "^2.38.1"
